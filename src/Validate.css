@@ -1,0 +1,132 @@
+.d-flex {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.Validate{
+    border-radius: 2px;
+    padding: 1rem;
+    background-color: #eee7e7;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    margin: auto;
+    width: 400px;
+}
+.Validate-details-form {
+    display: flex;
+    flex-direction: column;
+}
+.Validate-details-form input{
+    background: none;
+    padding: 0.8rem 0.8rem 0.5rem 0;
+    border:none;
+    border-bottom: 1px solid #999;
+}
+.Validate-details-form input:disabled{
+    color: rgb(157, 162, 168);
+    font-family: tahoma;
+    font-size: 0.8rem;
+}
+.Validate-details-form label{
+    color: #0a0642ef;
+    padding: 0.8rem 0rem 0.8rem 0;
+    text-align: left;
+    width: 150px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: tahoma;
+}
+.Validate-details-form div {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.Validate-details-form button {
+    font-family: tahoma;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+    background-color: #29b647;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.Validate-hi{
+    text-align: left;
+    color: rgb(33, 43, 54);
+    font-family: tahoma;
+}
+
+.loader {
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 60px solid #bdc3c7;
+    width: 30px;
+    height: 30px;
+    border-top-color: #0a0642ef;
+    border-bottom-color: rgb(58, 61, 78);
+    border-radius: 75%;
+    animation: coloredspin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes coloredspin {
+    0%{
+      transform: rotate(0deg) scale(1);
+      border-top-color: #0a0642ef;
+      border-bottom-color: #0a0642ef;
+    }
+    25% {
+      border-top-color: rgb(58, 61, 78);
+      border-bottom-color: rgb(58, 61, 78);
+    }
+    50% {
+      transform: rotate(360deg) scale(1.05);
+      border-top-color: #3498db;
+      border-bottom-color: #3498db;
+    }
+    75% {
+      border-top-color: #2ecc71;
+      border-bottom-color: #2ecc71;
+    }
+    100%{
+      transform: rotate(720deg) scale(1);
+      border-top-color: #1abc9c;
+      border-bottom-color: #1abc9c;
+    }
+  }
+  
+  @keyframes appear {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 400px){
+    .Validate-details-form div {
+        display: flex;
+        flex-direction: column;
+    }
+    .Validate-details-form label{
+        padding:0;
+        border: 1px solid #0a0642ef;
+        text-align: left;
+    }
+}
