@@ -24,7 +24,7 @@ class Validate extends Component {
 
     validate(bvn) {
         //Secret key
-        const key = "FLWSECK-e6db11d1f8a6208de8cb2f94e293450e-X";
+        const key = "FLWSECK_TEST-5e983d379557e128bdbe13e921a49625-X";
         this.setState({ Loading: true, Loaded: false })
         const API = `https://ravesandboxapi.flutterwave.com/v2/kyc/bvn/${bvn}?seckey=${key}`;
         axios.get(API).then(response => {
